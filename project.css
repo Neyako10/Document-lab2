@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div-project-main{
+    position: relative;
+    top: 30px;
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 0.5px solid rgb(206, 191, 191);
+    background-color: transparent;
+    filter: blur(0.2px);
+    font-family: calibri !important;
+}
+.div-project-main .img-div {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    overflow: hidden;
+    animation: mvTop 1.5s;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;  
+        margin: 0 auto;
+    }
+    img:hover{
+        cursor: pointer;
+        transform: scale(1.3);
+        transition: 0.4s ease-in-out;
+    }
+}
+.div-name h2{
+    font-family: calibri;
+    color: red;
+    text-decoration: none;
+    &:hover{
+        color: red;
+        transition: 0.3 ease-in-out;
+        cursor: pointer;
+    }
+}
+.underline-hover {
+    text-decoration: none; /* Loại bỏ gạch chân mặc định */
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+  
+.underline-hover::before {
+    content: ""; /* Tạo một pseudo-element để làm underline */
+    position: absolute;
+    width: 0; /* Bắt đầu với chiều rộng là 0 */
+    height: 3px; /* Độ cao của underline */
+    bottom: 0;
+    left: 0;
+    background-color: #09cdf0; /* Màu của underline khi hover */
+    transition: width 0.7s ease; /* Tạo hiệu ứng chuyển động */
+}
+  
+.underline-hover:hover::before {
+    width: 100%; /* Khi hover vào, mở rộng underline đến chiều rộng 100% */
+}
+  
+.div-name p{
+  padding-bottom: 10px;
+  color: red;
+  font-weight: bold;
+}
+.content{
+    border: 0.5px solid rgb(248, 242, 242);
+    padding: 15px;
+    border-radius: 20px 0px 20px 0px;
+    background-color: #f7f6f6;
+    color: #000000;
+}
+
+.btn-buy{
+    height: 50px;
+    padding-top: 10px;
+}
+.btn-buy button{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(103, 187, 103);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #000000;
+        transition: all .5s ease-in-out;
+        letter-spacing: 1.5px;
+    }
+
+}
+ 
+.back-to-home a{
+    font-family: calibri;
+    text-decoration: none;  
+    padding: 10px;
+    background-color: rgb(180, 179, 178);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px ;
+    &:hover{
+        text-decoration: underline 2px solid;
+        transition: 0.5s ease-in-out;
+        padding: 12px;
+    }
+
+
+
+}
